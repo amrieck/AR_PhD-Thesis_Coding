@@ -1,0 +1,33 @@
+++++ Instructions+++
+
+A) Prediction with already existing models
+
+0) File structure
+
+Before using this code either change the designated lines for file localization or adhere to following file structure.
+
+Working Directory
+
+	/Image 1/Image1.tiff
+	/Image 2/Image2.tiff
+	...
+	
+	/models/model-name/stardistmodel.json
+					  /weights_best.h5
+					  ...
+	
+	
+	Stardist-LD-Prediction.ipypnb
+	CSV-sorter.ipypnb
+	
+1) Decompress tiff files
+
+Some propritary image formats like .lif need to export the images to .tif format.
+However, they do so in a form that is compressed. This compression creates errors with the 
+stardist package. My workaraound for this is to simply open and resave the image using a fiji macro.
+
+Run the fiji decompression macro on the working directory.
+
+2) Run the Stardist-LD-Prediction
+
+open
