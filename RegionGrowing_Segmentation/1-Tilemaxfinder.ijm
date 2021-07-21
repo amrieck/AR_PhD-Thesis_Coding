@@ -73,6 +73,7 @@ function findmax(path, image){
 	imageCalculator("Multiply create 32-bit", matrix1, rmask);
 	run("8-bit");
 	saveAs("Tiff", savepath+name+"RGMatrix.tif");
+	run("Sharpen");
 	run("Find Maxima...", "noise=10 output=List exclude"); //finds maxima in Picture
 	saveAs("Results", savepath+name+"maxima.csv"); //saves maxima in new folder
 	

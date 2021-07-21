@@ -12,12 +12,12 @@ function processFolder(input,filend){
 		if(endsWith (list[i], filend [0])){
 					 
 		open(input+list[i]);
-		LDmask = getTitle();
-		preparemask(input+list[i],LDmask);
+			LDmask = getTitle();
+			preparemask(input+list[i],LDmask);
 		}
 
 		if(endsWith (list[i], filend[1])){
-		LDcount(input+list[i], LDmask);
+			LDcount(input+list[i], LDmask);
 		}
 
 		if(endsWith (list[i], filend[2])){
@@ -58,6 +58,7 @@ function LDcount(source, mask){
 	open(source);
 	sourceTitle=getTitle();
 	selectWindow(sourceTitle);
+	run("Set Scale...", "distance=2.4089 known=1 unit=micron");
 	
 	roiManager("Measure");
 	savename=createSavepath(source);
