@@ -1,7 +1,7 @@
 preimageslices=5; // How many slices are pre-FRAP
-Doublefrap=true; // two/multi channel FRAP
+Doublefrap=false; // two/multi channel FRAP
 threshold="RenyiEntropy dark"; //Threshold used to detect bleach area
-roinames=newArray("bleach","referencexor","reference","background"); //names for the different files created
+roinames=newArray("-bleach","-referencexor","-reference","-background"); //names for the different files created
 
 
 function processFolder(input, end){

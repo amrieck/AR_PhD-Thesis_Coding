@@ -4,7 +4,7 @@
 
 //Run through the subfolder and process everyimage
 
-Roisuffix="_rois.zip";
+Roisuffix="-BS_rois.zip";
 Imagesuffix="BS.tif";
 infotitle=false;
 
